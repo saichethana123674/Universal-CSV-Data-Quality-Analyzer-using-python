@@ -1,0 +1,230 @@
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Universal CSV Data Quality Dashboard</title>
+
+<style>
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background:#eef3f8;
+    margin:0;
+}
+
+.header {
+    background:linear-gradient(90deg,#0f4c81,#1976d2);
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+.container {
+    width:90%;
+    margin:auto;
+    padding:30px;
+}
+
+.cards {
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+    margin-bottom:30px;
+}
+
+.card {
+    flex:1;
+    min-width:220px;
+    background:white;
+    border-radius:12px;
+    padding:25px;
+    text-align:center;
+    box-shadow:0px 5px 15px rgba(0,0,0,.15);
+}
+
+.card h2 {
+    color:#1976d2;
+}
+
+.card p {
+    font-size:26px;
+    font-weight:bold;
+}
+
+.score {
+    color:green;
+}
+
+table {
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+    box-shadow:0px 5px 15px rgba(0,0,0,.15);
+}
+
+th {
+    background:#1976d2;
+    color:white;
+    padding:12px;
+}
+
+td {
+    padding:12px;
+    text-align:center;
+    border-bottom:1px solid #ddd;
+}
+
+.section-title {
+    color:#0f4c81;
+    margin-top:40px;
+}
+
+img {
+    width:90%;
+    max-width:900px;
+    display:block;
+    margin:auto;
+    margin-top:20px;
+    margin-bottom:30px;
+    border-radius:10px;
+    box-shadow:0px 5px 15px rgba(0,0,0,.2);
+}
+
+.footer {
+    margin-top:60px;
+    text-align:center;
+    color:gray;
+    padding:20px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="header">
+
+<h1>📊 Universal CSV Data Quality Dashboard</h1>
+
+<p>Professional Dataset Analysis Report</p>
+
+</div>
+
+<div class="container">
+
+<div class="cards">
+
+<div class="card">
+<h2>Dataset</h2>
+<p>Employee Data Quality Dataset</p>
+</div>
+
+<div class="card">
+<h2>Rows</h2>
+<p>1015</p>
+</div>
+
+<div class="card">
+<h2>Columns</h2>
+<p>7</p>
+</div>
+
+<div class="card">
+<h2>Quality Score</h2>
+<p class="score">99.13/100</p>
+</div>
+
+<div class="card">
+<h2>Status</h2>
+<p>🟢 Excellent</p>
+</div>
+
+</div>
+
+<h2 class="section-title">Dataset Information</h2>
+
+<table>
+
+<tr>
+<th>Metric</th>
+<th>Value</th>
+</tr>
+
+<tr>
+<td>Rows</td>
+<td>1015</td>
+</tr>
+
+<tr>
+<td>Columns</td>
+<td>7</td>
+</tr>
+
+<tr>
+<td>Missing Values</td>
+<td>80</td>
+</tr>
+
+<tr>
+<td>Duplicate Rows</td>
+<td>15</td>
+</tr>
+
+<tr>
+<td>Memory Usage</td>
+<td>256.59 KB</td>
+</tr>
+
+<tr>
+<td>Generated On</td>
+<td>03-07-2026 12:21:34</td>
+</tr>
+
+</table>
+
+
+        <h2 class="section-title">Missing Value Chart</h2>
+        <img src="../charts/missing_values.png">
+        
+            <h2 class="section-title">EmployeeID Histogram</h2>
+            <img src="../charts/EmployeeID_histogram.png">
+            
+            <h2 class="section-title">Age Histogram</h2>
+            <img src="../charts/Age_histogram.png">
+            
+            <h2 class="section-title">Salary Histogram</h2>
+            <img src="../charts/Salary_histogram.png">
+            
+            <h2 class="section-title">EmployeeID Box Plot</h2>
+            <img src="../charts/EmployeeID_boxplot.png">
+            
+            <h2 class="section-title">Age Box Plot</h2>
+            <img src="../charts/Age_boxplot.png">
+            
+            <h2 class="section-title">Salary Box Plot</h2>
+            <img src="../charts/Salary_boxplot.png">
+            
+
+<div class="footer">
+
+<hr>
+
+<h3>Developed By</h3>
+
+<p><b>Universal CSV Data Quality Analyzer</b></p>
+
+<p>Version 1.0</p>
+
+<p>© 2026 All Rights Reserved</p>
+
+</div>
+
+</div>
+
+</body>
+
+</html>
